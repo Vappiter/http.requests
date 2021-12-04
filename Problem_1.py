@@ -12,6 +12,6 @@ if __name__ == '__main__':
       pyt_res = json.loads(results.text)
       intelligence = int(pyt_res['results'][0]['powerstats']['intelligence'] + '\n')
       if big_intelligence < intelligence:
-       name_intel  = pyt_res['results'][0]['name'] + ': '   
+       name_intel  = pyt_res['results'][0]['name'] + ', '   
        big_intelligence = intelligence
-    print(f'Самый умный герой {name_intel}, его интеллект равен {big_intelligence}')   
+    print(f'Самый умный герой {name_intel} его интеллект равен {big_intelligence}')   
